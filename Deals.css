@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #1B3B6F;
+  background: #fff;
+}
+
+h1, h2, h3 {
+  color: #1B3B6F;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #1B3B6F;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00CFC1;
+}
+
+.deals-hero {
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(rgba(27, 59, 111, 0.85), rgba(27, 59, 111, 0.85)),
+              url('Images/Fiji\ Airways\ Gets\ A350\,\ Will\ Fly\ to\ US\ With\ New\ Biz\ Class\ Product.jpeg') center/cover no-repeat;
+}
+
+.deals-hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.deals-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-bar {
+  margin-top: 2rem;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.search-bar input,
+.search-bar select,
+.search-bar button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  background: #00CFC1;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #4DA8DA;
+}
+
+.featured-deals {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.deal-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.deal-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.deal-card .price {
+  color: #00CFC1;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.btn {
+  background: #1B3B6F;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #00CFC1;
+}
+
+.special-offers {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #F2F4F7;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.offer-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.countdown {
+  font-weight: bold;
+  color: #1B3B6F;
+  margin: 10px 0;
+}
+
+.popular-destinations {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.destination-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.trust {
+  padding: 3rem 1rem;
+  background: #E0F0FF;
+  text-align: center;
+}
+
+.trust-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  font-weight: bold;
+  color: #1B3B6F;
+}
+
+/* Newsletter */
+.newsletter {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #F2F4F7;
+}
+
+.newsletter form {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.newsletter button {
+  background: #00CFC1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background: #1B3B6F;
+}
+.footer {
+  background-color: #1B3B6F;
+  color: #fff;
+  padding: 60px 40px 30px;
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+}
+
+.footer-col h4,
+.footer-col h3 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #00CFC1;
+}
+
+.brand-col p {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #E0F0FF;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); 
+}
+
+.contact-box {
+  background: #ffffff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.contact-box strong {
+  display: block;
+  font-size: 14px;
+  color: #1B3B6F;
+}
+
+.contact-box p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #1B3B6F;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #E0E0E0;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1B3B6F;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .nav-links.active {
+    display: flex; 
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+  }
+}
+
+/* Hide hamburger on desktop by default */
+.menu-toggle {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1B3B6F;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 220px;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .nav-links li {
+    margin: 12px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
